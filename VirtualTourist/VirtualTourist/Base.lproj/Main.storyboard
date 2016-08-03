@@ -19,8 +19,10 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bK5-WF-pdt">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <gestureRecognizers/>
                                 <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="a85-74-0PD"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xSF-WG-5OE"/>
+                                    <outletCollection property="gestureRecognizers" destination="SkZ-rx-Qqa" appends="YES" id="ptb-1w-uwK"/>
                                 </connections>
                             </mapView>
                         </subviews>
@@ -35,8 +37,16 @@
                     <navigationItem key="navigationItem" title="Virtual Tourist" id="dpA-x6-wK7">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="fgD-BJ-I6L"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="bK5-WF-pdt" id="TmQ-pU-TyN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.59999999999999998" id="SkZ-rx-Qqa">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="gkC-z2-WVK"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1239" y="446"/>
         </scene>
