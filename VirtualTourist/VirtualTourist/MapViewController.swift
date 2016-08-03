@@ -30,6 +30,23 @@ extension MapViewController: MKMapViewDelegate {
 		}
 		
 		print("long press detected")
+		
+		let touchPoint = sender.locationInView(mapView)
+		let touchMapCoordinate = mapView.convertPoint(touchPoint, toCoordinateFromView: mapView)
+		
+		let annotation = MKPointAnnotation()
+		annotation.coordinate = touchMapCoordinate
+		
+		mapView.addAnnotation(annotation)
+	}
+	
+	func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+		
+		let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pinIdentifier")
+		pinView.pinTintColor = UIColor.redColor()
+		pinView.animatesDrop = true
+		
+		return pinView
 	}
 	
 	func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
