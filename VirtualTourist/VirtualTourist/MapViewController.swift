@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-// MARK: MapViewController
+// MARK: - MapViewController
 
 class MapViewController: UIViewController {
 
@@ -18,7 +18,7 @@ class MapViewController: UIViewController {
 	@IBOutlet var mapView: MKMapView!
 }
 
-// MARK: Map View Related Methods (including MKMapViewDelegate Methods)
+// MARK: - Map View Methods (including MKMapViewDelegate Methods)
 
 extension MapViewController: MKMapViewDelegate {
 	
