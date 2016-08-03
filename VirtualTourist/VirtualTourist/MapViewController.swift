@@ -23,9 +23,13 @@ class MapViewController: UIViewController {
 extension MapViewController: MKMapViewDelegate {
 	
 	@IBAction func handleLongPress(sender: UILongPressGestureRecognizer) {
-		if sender.state == .Began {
-			print("Long press detected")
+		
+		// Only add pin when long press began
+		guard sender.state == .Began else {
+			return
 		}
+		
+		print("long press detected")
 	}
 	
 	func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
