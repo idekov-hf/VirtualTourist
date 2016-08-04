@@ -51,5 +51,7 @@ extension MapViewController: MKMapViewDelegate {
 	
 	func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
 		
+        let photoAlbumVC = storyboard?.instantiateViewControllerWithIdentifier("PhotoAlbumViewController") as! PhotoAlbumViewController
+        navigationController?.pushViewController(photoAlbumVC, animated: true)
 	}
 }

@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="1239" y="446"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Album View Controller-->
         <scene sceneID="Msx-5j-VM2">
             <objects>
-                <viewController id="Xww-AL-JtR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoAlbumViewController" id="Xww-AL-JtR" customClass="PhotoAlbumViewController" customModule="VirtualTourist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vSV-gx-BY8"/>
                         <viewControllerLayoutGuide type="bottom" id="1M5-hO-P69"/>
