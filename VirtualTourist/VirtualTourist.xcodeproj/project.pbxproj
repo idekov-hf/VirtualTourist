@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D4ECCDC1D52DE350051BB93 /* PhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4ECCDB1D52DE350051BB93 /* PhotoAlbumViewController.swift */; };
+		5D4ECCE01D52DFE00051BB93 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D4ECCDE1D52DFE00051BB93 /* Model.xcdatamodeld */; };
 		5DFBD50E1D50D6C9000B6816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFBD50D1D50D6C9000B6816 /* AppDelegate.swift */; };
 		5DFBD5101D50D6C9000B6816 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFBD50F1D50D6C9000B6816 /* MapViewController.swift */; };
 		5DFBD5131D50D6C9000B6816 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DFBD5111D50D6C9000B6816 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		5D4ECCDB1D52DE350051BB93 /* PhotoAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViewController.swift; sourceTree = "<group>"; };
+		5D4ECCDF1D52DFE00051BB93 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5DFBD50A1D50D6C9000B6816 /* VirtualTourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualTourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFBD50D1D50D6C9000B6816 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DFBD50F1D50D6C9000B6816 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D4ECCDD1D52DFC80051BB93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D4ECCDE1D52DFE00051BB93 /* Model.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		5DFBD5011D50D6C9000B6816 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				5DFBD50D1D50D6C9000B6816 /* AppDelegate.swift */,
+				5D4ECCDD1D52DFC80051BB93 /* Model */,
 				5DFBD5211D50DB22000B6816 /* Controllers */,
 				5DFBD5201D50DB04000B6816 /* Assets */,
 				5DFBD51F1D50DAF3000B6816 /* Supporting Files */,
@@ -165,6 +176,7 @@
 				5DFBD5101D50D6C9000B6816 /* MapViewController.swift in Sources */,
 				5DFBD50E1D50D6C9000B6816 /* AppDelegate.swift in Sources */,
 				5D4ECCDC1D52DE350051BB93 /* PhotoAlbumViewController.swift in Sources */,
+				5D4ECCE01D52DFE00051BB93 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +331,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5D4ECCDE1D52DFE00051BB93 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5D4ECCDF1D52DFE00051BB93 /* Model.xcdatamodel */,
+			);
+			currentVersion = 5D4ECCDF1D52DFE00051BB93 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5DFBD5021D50D6C9000B6816 /* Project object */;
 }
