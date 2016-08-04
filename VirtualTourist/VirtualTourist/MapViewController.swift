@@ -29,8 +29,6 @@ extension MapViewController: MKMapViewDelegate {
 			return
 		}
 		
-		print("long press detected")
-		
 		let touchPoint = sender.locationInView(mapView)
 		let touchMapCoordinate = mapView.convertPoint(touchPoint, toCoordinateFromView: mapView)
 		

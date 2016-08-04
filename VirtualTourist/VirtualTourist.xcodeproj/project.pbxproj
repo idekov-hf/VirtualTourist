@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D314BE91D536B22002C3749 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D314BE81D536B22002C3749 /* CoreDataStack.swift */; };
 		5D4ECCDC1D52DE350051BB93 /* PhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4ECCDB1D52DE350051BB93 /* PhotoAlbumViewController.swift */; };
 		5D4ECCE01D52DFE00051BB93 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D4ECCDE1D52DFE00051BB93 /* Model.xcdatamodeld */; };
 		5DFBD50E1D50D6C9000B6816 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFBD50D1D50D6C9000B6816 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D314BE81D536B22002C3749 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		5D4ECCDB1D52DE350051BB93 /* PhotoAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViewController.swift; sourceTree = "<group>"; };
 		5D4ECCDF1D52DFE00051BB93 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5DFBD50A1D50D6C9000B6816 /* VirtualTourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualTourist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				5D4ECCDE1D52DFE00051BB93 /* Model.xcdatamodeld */,
+				5D314BE81D536B22002C3749 /* CoreDataStack.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D314BE91D536B22002C3749 /* CoreDataStack.swift in Sources */,
 				5DFBD5101D50D6C9000B6816 /* MapViewController.swift in Sources */,
 				5DFBD50E1D50D6C9000B6816 /* AppDelegate.swift in Sources */,
 				5D4ECCDC1D52DE350051BB93 /* PhotoAlbumViewController.swift in Sources */,
